@@ -25,7 +25,7 @@ function login_url($atts,$content=null,$shortcode){
 	
 	$path = plugin_dir_path( __DIR__ );
 	
-	require_once 'vendor/autoload.php';
+	require_once AWESOME_PATH.'/vendor/autoload.php';
 	
 	$return_value='';
 
@@ -68,7 +68,7 @@ function auth($atts,$content=null,$shortcode){
 	
 	$path = plugin_dir_path( __DIR__ );
 	
-	require_once 'vendor/autoload.php';
+	require_once AWESOME_PATH.'/vendor/autoload.php';
 	
 	$return_value='';
 
