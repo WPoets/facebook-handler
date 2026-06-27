@@ -11,7 +11,7 @@ use Facebook\Exceptions\FacebookSDKException;
 
 \aw2_library::add_service('facebook.login_url','returns the login URL for facebook',['namespace'=>__NAMESPACE__]);
 
-function login_url($atts,$content=null,$shortcode){
+function login_url($atts,$content=null,$shortcode=null){
 	if(\aw2_library::pre_actions('all',$atts,$content)==false)return;
 	extract(\aw2_library::shortcode_atts( array(
 	'ticket_id'=>null,
@@ -54,7 +54,7 @@ function login_url($atts,$content=null,$shortcode){
 
 \aw2_library::add_service('facebook.auth','Check the auth for facebook',['namespace'=>__NAMESPACE__]);
 
-function auth($atts,$content=null,$shortcode){
+function auth($atts,$content=null,$shortcode=null){
 	if(\aw2_library::pre_actions('all',$atts,$content)==false)return;
 	extract(\aw2_library::shortcode_atts( array(
 	'ticket_id'=>null,
